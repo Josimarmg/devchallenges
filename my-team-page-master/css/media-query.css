@@ -81,6 +81,10 @@
         align-self: flex-end;
     }
 
+    .container-img img:hover {
+        transform: scaleX(none);
+    }
+
     .legend {
         width: 250px;
         font-size: 0.625rem;
@@ -125,6 +129,10 @@
 
     .container-img:hover {
         transform: scale(none);
+    }
+
+    .container-img img:hover {
+        transform: scaleX(none);
     }
 
     footer {
