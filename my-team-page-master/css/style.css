@@ -56,6 +56,7 @@ header h1 {
     font-family: var(--font-special);
     font-size: 2,25rem;
     color: var(--color01);
+    text-shadow: 1px 1px var(--color03);
 }
 
 header .about{
@@ -108,6 +109,11 @@ main section {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    transition: 1.5s;
+}
+
+.container-img:hover {
+    transform: scale(1.2)
 }
 
 .container-img:nth-child(2), .container-img:nth-child(5){
@@ -116,6 +122,13 @@ main section {
 
 .container-img img {
     height: 90%;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.container-img img:hover {
+    transform: scaleX(-1);
 }
 
 .legend {

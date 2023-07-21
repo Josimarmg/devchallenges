@@ -20,6 +20,10 @@
     .container-img {
         width: 200px;
     }
+
+    .container-img:hover {
+        transform: scale(1.1);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -63,6 +67,10 @@
     .container-img {
         width: 190px;
         height: 250px;
+    }
+
+    .container-img:hover {
+        transform: scale(1.2);
     }
 
     .container-img:nth-child(5) {
@@ -113,6 +121,10 @@
     .container-img {
         width: 150px;
         height: 250px;
+    }
+
+    .container-img:hover {
+        transform: scale(none);
     }
 
     footer {
