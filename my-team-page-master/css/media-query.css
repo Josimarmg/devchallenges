@@ -70,7 +70,7 @@
     }
 
     .container-img:hover {
-        transform: scale(1.1);
+        transform: scale(none);
     }
 
     .container-img:nth-child(5) {
