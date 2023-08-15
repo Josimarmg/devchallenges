@@ -74,50 +74,8 @@
 
     header {
         padding-left: 1.785em;
-        padding-right: 0.65em;
+        padding-right: 1.785em;
     }
-
-    main {
-        height: calc(100vh + 230px);
-        flex-direction: column;
-        align-items: flex-start;
-        row-gap: 20px;
-    }
-
-    #sectionOne {
-        width: 100%;
-    }
-
-    #sectionOne .description {
-        width: 450px;
-    }
-
-    .description h1 {
-        font-size: 2.5em;
-    }
-
-    .description p {
-        font-size: 1.25em;
-        margin: 15px 0;
-    }
-
-    #sectionTwo {
-        width: 100%;
-    }
-
-    #sectionTwo #container__images {
-        height: 92%;
-    }
-
-    #container__profile {
-        width: 340px;
-        right: 5%;
-        bottom: 0;
-    }
-}
-
-/* MOBILE L 425px */
-@media screen and (max-width: 426px) {
 
     #openMenu,
     #closeMenu {
@@ -162,6 +120,53 @@
     }
 
     main {
+        height: calc(100vh + 230px);
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+
+    #sectionOne {
+        width: 100%;
+    }
+
+    #sectionOne .description {
+        width: 450px;
+    }
+
+    .description h1 {
+        font-size: 2.5em;
+    }
+
+    .description p {
+        font-size: 1.25em;
+        margin: 15px 0;
+    }
+
+    #sectionTwo {
+        width: 100%;
+    }
+
+    #sectionTwo #container__images {
+        height: 92%;
+    }
+
+    #container__profile {
+        width: 340px;
+        right: 5%;
+        bottom: 0;
+    }
+}
+
+/* MOBILE L 425px */
+@media screen and (max-width: 426px) {
+
+    header {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    main {
         width: 90vw;
         height: 100vh;
         align-items: center;
@@ -169,25 +174,32 @@
     }
 
     #sectionOne {
-        height: 25%;
+        height: 35%;
     }
 
-    #section .description {
-        width: 350px;
+    #sectionOne .description {
+        width: 300px;
     }
 
     #sectionTwo {
-        height: 75%;
-        align-self: center;
+        height: 65%;
     }
 
     #sectionTwo #container__images {
-        height: 85%;
+        height: 87%;
     }
 
     #container__profile {
         bottom: 0px;
         right: 50%;
         transform: translateX(50%);
+    }
+}
+
+/* MOBILE M 375px */
+@media screen and (max-width: 376px) {
+
+    header {
+        padding-left: 0.5em;
     }
 }
