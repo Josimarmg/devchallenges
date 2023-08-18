@@ -46,16 +46,18 @@ header {
     z-index: 1;
 }
 
-header .this--interior {
-    border: 1px solid #fff;
-    padding: 0.75em;
-}
-
 header .this--interior a {
     font-family: var(--font-titles);
     font-size: 0.875em;
     font-weight: normal;
     text-transform: uppercase;
+    border: 1px solid white;
+    padding: 15px;
+}
+
+header .this--interior a:hover {
+    border-radius: 2px;
+    opacity: 0.8;
 }
 
 header #menu {
