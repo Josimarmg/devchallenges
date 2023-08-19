@@ -65,11 +65,24 @@
         left: 0;
         width: 100vw !important;
         height: 110vh !important;
-        flex-direction: column;
-        align-items: center !important;
-        justify-content: center !important;
-        row-gap: 50px;
+        align-items: center;
         display: none;
+    }
+
+    #menu .menu-sections {
+        width: 100%;
+        height: 40%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu .menu-sections a {
+        opacity: 0.5;
+    }
+
+    header #menu a.selected {
+        transform: scale(1.2);
     }
 
     main {
@@ -116,6 +129,14 @@
     header {
         padding-left: 1em;
         padding-right: 1em;
+    }
+
+    #menu .menu-sections a {
+        opacity: 0.5;
+    }
+
+    header #menu a.selected {
+        transform: scale(1.1);
     }
 
     main {
