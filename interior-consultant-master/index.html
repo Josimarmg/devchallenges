@@ -20,9 +20,9 @@
     <menu id="menu" class="display--flex">
       <button id="closeMenu">X</button>
       <a href="#" id="home">Home</a>
-      <a href="#">Collection</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <a href="#" id="collect">Collection</a>
+      <a href="#" id="about">About</a>
+      <a href="#" id="contact">Contact</a>
     </menu>
     </div>
   </header>
@@ -67,6 +67,21 @@
   </footer>
 
   <script>
+    // Menu - border-bottom
+    const sections = [home, collect, about, contact];
+    sections.forEach((section) => {
+      section.addEventListener('click', () => {
+        sections.forEach((sec) => {
+          if (sec === section) {
+            sec.classList.add('selected');
+          } else {
+            sec.classList.remove('selected');
+          }
+        });
+      });
+    });
+
+    // Menu - tablet/mobile
     openMenu.addEventListener('click', () => {
       menu.style.display = 'flex';
 
@@ -82,7 +97,7 @@
         menu.style.opacity = '1';
         menu.style.right = '0';
       }, 10)
-    })
+    });
 
     closeMenu.addEventListener('click', () => {
       menu.style.opacity = '0';
@@ -94,7 +109,7 @@
         menu.removeAttribute('style');
         openMenu.removeAttribute('style');
       }, 200)
-    })
+    });
   </script>
 </body>
 
