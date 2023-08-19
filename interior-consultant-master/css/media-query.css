@@ -12,7 +12,6 @@
     }
 }
 
-/* LAPTOP */
 @media screen and (max-width: 1024px) {
 
     header {
@@ -56,20 +55,20 @@
 
     #closeMenu {
         position: absolute;
-        top: 50px;
-        right: 40px;
+        top: 35px;
+        right: 45px;
     }
 
     #menu {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100vw !important;
         height: 110vh !important;
-        position: fixed;
-        align-self: center;
         flex-direction: column;
         align-items: center !important;
         justify-content: center !important;
         row-gap: 50px;
-        margin-top: 555px;
         display: none;
     }
 
@@ -137,7 +136,6 @@
     }
 }
 
-/* MOBILE */
 @media screen and (max-width: 376px) {
 
     header {
