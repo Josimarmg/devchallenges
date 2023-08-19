@@ -74,7 +74,7 @@
     }
 
     #menu .menu-sections a {
-        opacity: 0.5;
+        opacity: 0.6;
     }
 
     header #menu a.selected {
@@ -128,10 +128,6 @@
     header {
         padding-left: 1em;
         padding-right: 1em;
-    }
-
-    header #menu a.selected {
-        transform: scale(1.1);
     }
 
     main {
