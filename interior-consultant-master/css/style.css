@@ -63,7 +63,6 @@ header .this--interior a:hover {
 header #menu {
     width: 35%;
     height: 25px;
-    justify-content: space-between;
     background: var(--backg01);
 }
 
