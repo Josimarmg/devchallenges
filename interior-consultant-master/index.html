@@ -70,6 +70,8 @@
 
   <script>
     // Menu - border-bottom
+    home.style.cssText = "border-bottom-width: 3.5px; opacity: 1;";
+
     const sections = [home, collect, about, contact];
     sections.forEach((section) => {
       section.addEventListener('click', () => {
@@ -78,6 +80,7 @@
             sec.classList.add('selected');
           } else {
             sec.classList.remove('selected');
+            home.style.cssText = "";
           }
         });
       });
