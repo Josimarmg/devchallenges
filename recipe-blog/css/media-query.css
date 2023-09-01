@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1024px) {
+    header {
+        width: 70vw;
+    }
+
+    main {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        width: 80vw;
+    }
+
+    main {
+        width: 80vw;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+    
+    #description_container > div.flexbox {
+        width: 90%;
+        column-gap: 10px;
+    }
+
+    #container_symbol_description_text > .material-symbols-outlined.drag_indicator {
+        font-size: 23px;
+    }
+
+    #section-B {
+        flex-direction: column;
+    }
+
+    #article-A {
+        order: 2;
+    }
+
+    #section-B > #article-B {
+        order: 1;
+    }
+
+    .article-container {
+        width: 100%;
+    }
+
+    #container_times {
+        width: 100%;
+        height: 120px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 0;
+        gap: 0px 50px;
+        box-shadow: none;
+        border-radius: none;
+    
+    }
+
+    #container_times > .times:first-child {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    header {
+        width: 90vw;
+    }
+
+    main {
+        width: 90vw;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .container-A, .container-B {
+        font-size: 0.875em;
+    }
+
+    #container_times {
+        gap: 0px 20px;
+    
+    }
+
+    .link--source {
+        font-size: 0.875em;
+    }
+}
+
+@media screen and (max-width: 426px) { 
+    header {
+        width: 95vw;
+        margin-bottom: 30px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        width: 95vw;
+    }
+
+    #container_symbol_description_text > .material-symbols-outlined.drag_indicator {
+        font-size: 18px;
+    }
+
+    .container--input > input {
+        width: 15px;
+    }
+
+    #container_times > .times {
+        gap: 5px;
+    }
+ 
+    #description_container > div.flexbox > p {
+        font-size: 0.75em;
+    }
+
+    #container_times {
+        gap: 0px 15px;
+    }
+
+    #container_times > .times > div > p {
+        font-size: 0.625em;
+    }
+    
+    #container_times > .times > div > p:first-child {
+        font-size: 0.5em;
+    }
+    
+    .times > .material-symbols-outlined {
+        transform: scale(1);
+    }
+
+    #section-B {
+        margin-top: 10px;
+    }
+
+    #section-B > #article-A > .container-A > h2:first-child {
+        margin-top: 15px;
+    }
+
+    .numeral {
+        height: 28px;
+        width: 28px;
+    }
+
+    .link--source {
+        font-size: 0.75em;
+    }
+}
