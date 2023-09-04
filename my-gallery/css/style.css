@@ -114,31 +114,35 @@ p {
 
 @media screen and (max-width: 768px) {
 
+    #social_container > div {
+        flex: 0 0 16vw;
+        height: 10vw;
+    }
+
+    #profile_card {
+        width: 30%;
+    }
+
     #profile_card > h2 {
-        font-size: 2vw;
+        font-size: 3.3vw;
     }
 
     p {
-        font-size: 1.2vw;
+        font-size: 2.35vw;
     }
 
     #social_container > div > p:first-child {
-        font-size: 1.4vw;
-    }
-
-    #images_container {
-        width: 80vw;
-    }
-}
-
-@media screen and (max-width: 426px) {
-    
-    #social_container > div {
-        flex: 0 0 10vw;
-        height: 6.7vw;
+        font-size: 2.35vw;
     }
 
     #images_container {
         width: 85vw;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+     #images_container {
+        width: 90vw;
     }
 }
