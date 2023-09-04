@@ -125,6 +125,10 @@ p {
     #social_container > div > p:first-child {
         font-size: 1.4vw;
     }
+
+    #images_container {
+        width: 80vw;
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -132,5 +136,9 @@ p {
     #social_container > div {
         flex: 0 0 10vw;
         height: 6.7vw;
+    }
+
+    #images_container {
+        width: 85vw;
     }
 }
