@@ -76,7 +76,7 @@ p {
 /* Gallery Section */
 
 #images_container {
-    width: 70vw;
+    width: 90vw;
     margin: 6.5vw auto;
     justify-content: center;
 }
@@ -108,4 +108,27 @@ p {
 
 .grid-item.img4 {
     grid-area: 2 / 3 / 4 / 4;
+}
+
+@media screen and (max-width: 768px) {
+
+    #profile_card > h2 {
+        font-size: 2vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+
+    #social_container > div > p:first-child {
+        font-size: 1.8vw;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    
+    #social_container > div {
+        flex: 0 0 10vw;
+        height: 6.7vw;
+    }
 }
