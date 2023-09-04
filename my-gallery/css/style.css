@@ -37,7 +37,7 @@ p {
 }
 
 #profile_card > img {
-    width: 100%;
+    width: 90%;
     border-radius: 1.6vw;
 }
 
@@ -76,7 +76,7 @@ p {
 /* Gallery Section */
 
 #images_container {
-    width: 90vw;
+    width: 70vw;
     margin: 6.5vw auto;
     justify-content: center;
 }
@@ -88,10 +88,10 @@ p {
     gap: 3%;
 }
 
-.gallery-imgs {
+.grid-item {
     width: 100%;
     height: 100%;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 15%);
 }
 
 .grid-item > img {
