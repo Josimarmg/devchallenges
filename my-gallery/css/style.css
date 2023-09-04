@@ -114,29 +114,33 @@ p {
 
 @media screen and (max-width: 768px) {
 
-    #social_container > div {
-        flex: 0 0 16vw;
-        height: 10vw;
+    #profile_card {
+        width: 105px;
     }
 
-    #profile_card {
-        width: 30%;
+    #profile_card > img {
+        width: 100%;
+    }
+
+    #social_container > div {
+        flex: 0 0 78px;
+        height: 52px;
     }
 
     #profile_card > h2 {
-        font-size: 3.3vw;
+        font-size: 13px;
     }
 
     p {
-        font-size: 2.35vw;
+        font-size: 10px;
     }
 
     #social_container > div > p:first-child {
-        font-size: 2.35vw;
+        font-size: 10px;
     }
 
     #images_container {
-        width: 85vw;
+        width: 80vw;
     }
 }
 
