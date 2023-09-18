@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page</title>
+    <link rel="shortcut icon" href="images/devchallenges.png" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <!-- icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <main>
+        <section id="section-a">
+            <form id="form" method="post">
+                <h3>Contact information</h3>
+                <label>E-mail <br>
+                    <span class="material-symbols-outlined">mail</span>
+                    <input type="email" id="email" placeholder="Enter your E-mail..." required>
+                </label>
+
+                <label>Phone <br>
+                    <span class="material-symbols-outlined">call</span>
+                    <input type="tel" id="phone" placeholder="Enter your phone..." required>
+                </label>
+
+                <h3 class="margemTop">Shipping address</h3>
+                <label>Full name <br>
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <input type="text" id="full-name" placeholder="Your name.." required>
+                </label>
+
+                <label>Address <br>
+                    <span class="material-symbols-outlined">home</span>
+                    <input type="text" id="address" placeholder="Your address.." required>
+                </label>
+
+                <label>City <br>
+                    <span class="material-symbols-outlined">location_city</span>
+                    <input type="text" id="city" placeholder="Your city.." required>
+                </label>
+
+                <div id="container-coutry-pcode">
+                    <div id="container-country-select">
+                        <label>Country</label><br>
+                        <span class="material-symbols-outlined">public</span>
+                        <select id="country" required>
+                            <option hidden>Your country..</option>
+                            <optgroup label="Africa">
+                                <option value="EG">Egypt</option>
+                                <option value="MA">Marocco</option>
+                                <option value="TZ">Tanzania</option>
+                            </optgroup>
+                            <optgroup label="Asia">
+                                <option value="CN">China</option>
+                                <option value="IN">Idian</option>
+                                <option value="JP">Japan</option>
+                            </optgroup>
+                            <optgroup label="Europe">
+                                <option value="IT">Italy</option>
+                                <option value="FR">France</option>
+                                <option value="ES">Spain</option>
+                            </optgroup>
+                            <optgroup label="North America">
+                                <option value="CA">Canada</option>
+                                <option value="MX">Mexico</option>
+                                <option value="US">United States</option>
+                            </optgroup>
+                            <optgroup label="South America">
+                                <option value="AR">Argentina</option>
+                                <option value="BR">Brazil</option>
+                                <option value="CL">Chile</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div id="container-postal-code">
+                        <span class="material-symbols-outlined">markunread_mailbox</span>
+                        <label>Postal Code</label>
+                        <input type="text" id="postal-code" placeholder="Your postal code.." required>
+                    </div>
+                </div>
+
+                <div id="container-save-info">
+                    <input type="checkbox" id="save-info">
+                    <label for="save-info">Save this information for next time</label>
+                </div>
+
+                <input type="submit" id="submit-btn" value="Continue">
+            </form>
+        </section>
+
+        <section id="section-b">
+            <div id="container-product-info">
+                <div class="product product-a">
+                    <div class="container-image">
+                        <img src="images/photo1.png" alt="Vintage Backgab">
+                    </div>
+                    <div class="container-product-price">
+                        <h3>Vintage Backgab</h3>
+                        <div class="container-price">
+                            <p>$<span class="discounted-price">54.99</span></p>
+                            <p>$<span class="current-price">94.99</span></p>
+                        </div>
+                        <div class="container-product-quantity">
+                            <button class="material-symbols-outlined minus-btn">remove</button>
+                            <input type="number" class="item-numbers" value="1">
+                            <button class="material-symbols-outlined plus-btn">add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product product-b">
+                    <div class="container-image">
+                        <img src="images/photo2.png" alt="Levi Shoes">
+                    </div>
+                    <div class="container-product-price">
+                        <h3>Levi Shoes</h3>
+                        <div class="container-price">
+                            <p>$
+                                <span class="discounted-price">74.99</span>
+                            </p>
+                            <p>$
+                                <span class="current-price">124.99</span>
+                            </p>
+                        </div>
+                        <div class="container-product-quantity">
+                            <button class="material-symbols-outlined minus-btn">remove</button>
+                            <input type="number" class="item-numbers" value="1">
+                            <button class="material-symbols-outlined plus-btn">add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="container-shipping-total">
+                    <div>
+                        <h3>Shipping</h3>
+                        <p>$
+                            <span id="shipping">19</span>
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Total</h3>
+                        <p>$
+                            <span id="total-price">148.98</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            created by <a href="https://devchallenges.io/portfolio/Josimarmg" target="_blank">Josimarmg </a>-
+            devChallenges.io
+        </p>
+    </footer>
+
+</body>
+
+</html>
