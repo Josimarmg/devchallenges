@@ -63,7 +63,7 @@ form.addEventListener('submit', event => {
     if (valid) {
         form.submit();
 
-        alert("Order confirmed!");
+        alert("Successful!");
 
         message.innerHTML = "<p><span>Order confirmed!</span> <br> Your purchase has been successfully processed.</p>";
     }
