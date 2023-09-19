@@ -268,6 +268,18 @@ input#submit-btn {
     color: var(--color-1);
 }
 
+div#msg {
+    color: var(--color-3);
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+div#msg > p > span {
+    color: #F2994A;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 footer {
     width: 90vw;
     color: var(--color-6);
