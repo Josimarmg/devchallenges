@@ -276,8 +276,10 @@ div#msg {
 
 div#msg > p > span {
     color: #F2994A;
+    background-color: var(--color-4);
     font-weight: bold;
     text-decoration: underline;
+    padding: 1px 3px;
 }
 
 footer {
