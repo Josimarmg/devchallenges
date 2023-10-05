@@ -1,1 +1,214 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    /* fonts */
+    --font-logo: 'Heebo', sans-serif;
+    --font-default: 'Poppins', sans-serif;
+    --font-repo: 'Montserrat', sans-serif;
+
+    /* colors*/
+    --Gray-1: #333333;
+    --Gray-2: #4F4F4F;
+    --Gray-3: #828282;
+    --Gray-4: #BDBDBD;
+    --Gray-5: #E0E0E0;
+    --Gray-6: #F2F2F2;
+    --white: #FFFFFF;
+    --Special-1: #2D9CDB;
+    --Special-2: #EB5757;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-default);
+    color: var(--Gray-1);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--Special-1);
+    font-size: 1.125rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 1.125rem;
+}
+
+input, button {
+    border: none;
+    border-radius: 0.75rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul > li > a {
+    font-size: 1.5rem;
+    color: var(--Gray-1);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+.flex, .card {
+    display: flex;
+}
+
+header, header > nav, header ul {
+    display: flex;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 42px;
+}
+
+header {
+    width: 90vw;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* header logo */
+div#ilogo > a {
+    
+    font-size: 2.25rem;
+    color: var(--Gray-1);
+}
+
+div.logo {
+    margin-right: 10px;
+}
+
+div.logo > a {
+    font-family: var(--font-logo);
+    font-size: 2.25rem;
+    color: var(--Gray-1);
+}
+
+/* menu */
+header > nav > ul {
+    gap: 39px;
+} 
+
+header > nav > ul > li a {
+    transition: color .3s;
+}
+
+header > nav > ul > li a:hover {
+    color: var(--Special-1);
+}
+
+header span.menuButtom {
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    display: none;
+    z-index: 2;
+}
+
+/* main */
+main, #section-a {
+    width: 90vw;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 200px;
+}
+
+section {
+    width: 75vw;
+    margin: auto;
+}
+
+/* section-a */
+#section-a {
+    width: 100%;
+    row-gap: 42px;
+}
+
+.container-title1, .container-title2 {
+    width: 543px;
+    margin-left: 220px;
+}
+
+.container-image {
+    width: 100%;
+}
+
+.container-title2 {
+    width: 365px;
+}
+
+.container-title2 p {
+    margin: 42px 0;
+}
+
+form {
+    width: 96%;
+    position: relative;
+}
+
+form > label {
+    font-size: 0.875rem;
+    color: var(--Gray-3);
+}
+
+form > input[type="email"] {
+    width: 100%;
+    font-size: 1.125rem;
+    background-color: var(--Gray-6);
+    padding: 15px 20px;
+    margin-top: 6px;
+}
+
+form > input[type="email"]:focus {
+    background-color: var(--Gray-5);
+}
+
+form > input:focus {
+    outline: none;
+}
+
+form > input::placeholder {
+    color: var(--Gray-4);
+}
+
+form > input[type="submit"] {
+    cursor: pointer;
+    font-size: 1.125rem;
+    color: var(--Gray-6);
+    background-color: var(--Special-1);
+    padding: 11px 29px;
+    position: absolute;
+    right: 3px;
+    bottom: 4px;
+}
+
+form > input[type="submit"]:hover {
+    opacity: .9;
+}
