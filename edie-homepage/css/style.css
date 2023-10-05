@@ -270,3 +270,64 @@ span.material-symbols-outlined {
 .card > button:hover {
     opacity: 40%;
 }
+
+/* section-c */
+#section-c > h2 {
+    width: 380px;
+}
+
+#section-c >.container-image {
+    display: flex;
+    column-gap: 30px;
+}
+
+.figure-container {
+    width: 100%;
+}
+
+.figure-container > figure:first-child {
+    margin-bottom: 150px;
+}
+
+.figure-container.group-figure1 > figure:first-child {
+    margin-top: 150px;
+}
+
+.figure-container > figure {
+    opacity: 40%;
+    transition: opacity 1s;
+}
+
+.figure-container > figure:hover {
+    opacity: 100%;
+}
+
+figure > figcaption {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: var(--Gray-3);
+}
+
+figure > h3 {
+    font-weight: normal;
+}
+
+.container-link_sMore {
+    width: 100%;
+    justify-content: flex-end;
+    column-gap: 12px;
+}
+
+.container-link_sMore > a {
+    font-size: 1.5rem;
+}
+
+.container-link_sMore > a:hover {
+    text-decoration: underline;
+}
+
+.container-link_sMore > span {
+    font-size: 1.5rem;
+    color: var(--Special-1);
+    align-self: center;
+}
