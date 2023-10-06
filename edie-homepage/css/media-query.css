@@ -285,4 +285,83 @@
     #section-c > figcaption {
         font-size: 0.625rem;
     }
+
+    .container-link_sMore {
+        justify-content: flex-start;
+    }
+
+    #section-d {
+        width: 90vw !important;
+        row-gap: 100px;
+    }
+
+    .team-container {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 36px;
+        margin-top: 50px;
+    }
+
+    .text-container > p {
+        width: 280px;
+    }
+
+    .team-img-container {
+        width: 100%;
+    }
+
+    .team-img-container div {
+        width: 100%;
+        margin-left: 12px;
+    }
+
+    .team-img-container > div:nth-child(2) {
+        width: 90%;
+    }
+
+    .team-img-container > div:nth-child(2) > img:first-child {
+        width: 92%;
+        margin-bottom: 4px;
+    }
+
+    footer {
+        padding-top: 30px;
+    }
+
+    #footer-container.flex {
+        flex-direction: column;
+        row-gap: 66px;
+    }
+
+    #menu-social-footer-container {
+        width: auto;
+        flex-direction: column;
+        row-gap: 64px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    #form-footer-container {
+        padding-left: 0px;
+    }
+
+    #form-footer-container > form {
+        width: 83.2%;
+    }
+
+    .createdBy-container-link.flex {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .container-title1, .container-title2 {
+        width: 240px;
+        margin-left: 30px;
+    }
+
+    .container-title2 {
+        width: 220px;
+    }
 }
