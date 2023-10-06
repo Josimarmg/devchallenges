@@ -3,7 +3,7 @@
         row-gap: 120px;
     }
 
-    #section-b > .card-conteiner > .card {
+    #section-b > .card-container > .card {
         width: 341px;
         padding: 42px 0px;
     }
@@ -12,7 +12,7 @@
         row-gap: 98px;
     }
 
-    #footer-conteiner.fles {
+    #footer-container.flex {
         width: 90vw;
     }
 }
@@ -113,12 +113,12 @@
         padding: 12px 28px;
     }
 
-    #section-b > .card-conteiner.flex {
+    #section-b > .card-container.flex {
         flex-direction: column;
         row-gap: 30px;
     }
 
-    #section-b > .card-conteiner > .card.frontEndCard {
+    #section-b > .card-container > .card.frontEndCard {
         align-self: flex-end;
     }
 
@@ -172,5 +172,117 @@
 
     #form-footer-container > form {
         width: 100%;
+    }
+}
+/* small screen(mobile) */
+@media screen and (max-width: 426px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    a {
+        font-size: 0.75rem;
+    }
+
+    span.material-symbols-outlined {
+        font-size: 1.5rem;
+    }
+
+    header {
+        padding: 1rem 0;
+    }
+
+    div.logo > a {
+        font-size: 1.5rem !important;
+    }
+
+    header span.menuButton {
+        right: 0px;
+    }
+
+    header span.toggle.Menu {
+        right: 20px;
+    }
+
+    main {
+        row-gap: 50px;
+    }
+
+    #section-a {
+        row-gap: 12px;
+        margin: 0 0;
+    }
+
+    .container-title1, .container-title2 {
+        width: 290px;
+        margin-left: 30px;
+    }
+
+    .container-title2 p {
+        margin: 16px 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form > label {
+        font-size: 0.625rem;
+    }
+
+    form > input[type="email"],
+    form > input[type="submit"] {
+        font-size: 0.875rem;
+        padding: 13.1px 16px;
+    }
+
+    form > input[type="submit"] {
+        padding: 9.1px 21.2px;
+    }
+
+    #section-b {
+        row-gap: 42px;
+    }
+    
+    #section-b > h2 {
+        width: 270px;
+    }
+    
+    #section-b > .card-container > .card.card.frontEndCard {
+        align-self: flex-start;
+    }
+    
+    #section-b > .card-container > .card {
+        gap: 36px;
+        width: 280px;
+    }
+    
+    #section-c > .container-image {
+        flex-direction: column;
+    }
+    
+    .figure-container {
+        width: 97%;
+    }
+    
+    .figure-container figure,
+    .figure-container figure:first-child {
+        margin-bottom: 36px;
+    }
+    
+    .figure-container.group-figure1 > figure:first-child {
+        margin-top: 50px;
+    }
+    
+    #section-c > h2 {
+        width: 310px;
+    }
+    
+    #section-c > h3 {
+        font-size: 1.125rem;
+    }
+    
+    #section-c > figcaption {
+        font-size: 0.625rem;
     }
 }
