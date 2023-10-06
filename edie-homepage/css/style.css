@@ -94,7 +94,6 @@ header {
 
 /* header logo */
 div#ilogo > a {
-    
     font-size: 2.25rem;
     color: var(--Gray-1);
 }
@@ -402,4 +401,68 @@ figure > h3 {
 #profile-container > div > p {
     color: var(--Gray-3);
     margin-top: 18px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #100E1D;
+    padding-top: 46px;
+}
+
+footer * {
+    color: var(--white) !important;
+}
+
+#footer-container.flex {
+    width: 75vw;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#menu-social-footer-container {
+    width: 35%;
+    justify-content: space-between;
+    margin-right: 12px;
+    margin-bottom: 46px;
+}
+
+#menu-footer-container > ul > li {
+    margin: 10px 12px 10px 0;
+}
+
+#menu-footer-container > ul > li > a {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+#menu-footer-container > ul > li > a:hover {
+    opacity: 40%;
+}
+
+#icons-container ion-icon {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-right: 6px;
+}
+
+div#form-footer-container {
+    width: 350px;
+}
+
+#form-footer-container > form {
+    width: 100%;
+}
+
+form > input {
+    color:var(--Gray-1) !important;
+}
+
+.createdBy-container-link.flex {
+    justify-content: center;
+}
+
+.createdBy-container-link.flex > p,
+.createdBy-container-link.flex a {
+    font-size: 0.875rem;
 }
