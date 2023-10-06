@@ -461,3 +461,7 @@ form > input {
 .createdBy-container-link.flex a {
     font-size: 0.875rem;
 }
+
+.createdBy-container-link.flex a {
+    font-weight: bold;
+}
