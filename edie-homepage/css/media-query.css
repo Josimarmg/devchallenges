@@ -1,0 +1,176 @@
+@media screen and (max-width: 1024px) {
+    main {
+        row-gap: 120px;
+    }
+
+    #section-b > .card-conteiner > .card {
+        width: 341px;
+        padding: 42px 0px;
+    }
+
+    #section-d {
+        row-gap: 98px;
+    }
+
+    #footer-conteiner.fles {
+        width: 90vw;
+    }
+}
+/* small screen(tablet) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p, a {
+        font-size: 0.875rem;
+    }
+
+    div.logo {
+        margin-right: 0px;
+    }
+
+    header > nav.toggle {
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: transform .5s ease-in-out;
+    }
+
+    header > nav {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: lightgray;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform .5s ease-in-out;
+        opacity: 0;
+    }
+
+    header > nav > ul {
+        flex-direction: column;
+    }
+
+    header span.menuButtom {
+        display: flex;
+        opacity: 1;
+        transition: opacity .3s ease-in-out;
+    }
+
+    header span.toggleMenu {
+        position: fixed;
+        right: 57.5px;
+    }
+
+    main {
+        row-gap: 100px;
+    }
+
+    .container-image img {
+        height: 145px;
+        width: 100%;
+    }
+
+    .container-title1, .container-title2 {
+        width: 405px;
+        margin-left: 40px;
+    }
+
+    .container-title2 p {
+        margin: 36px 0;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    form > label {
+        font-size: 0.75rem;
+    }
+
+    form > input[type="email"] {
+        font-size: 1rem;
+        padding: 16px;
+    }
+
+    form > input[type="submit"] {
+        font-size: 1rem;
+        padding: 12px 28px;
+    }
+
+    #section-b > .card-conteiner.flex {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    #section-b > .card-conteiner > .card.frontEndCard {
+        align-self: flex-end;
+    }
+
+    #section-c > .container-image {
+        column-gap: 20px;
+    }
+
+    .figure-container {
+        height: 100%;
+        margin-top: 30px;
+    }
+
+    .figure-container figure:first-child {
+        margin-bottom: 100px;
+    }
+
+    .figure-container.group-figure1 > figure:first-child {
+        margin-top: 50px;
+    }
+
+    .container-link_sMore > a {
+        font-size: 1.125rem;
+    }
+
+    #section-d {
+        row-gap: 0px;
+    }
+
+    .team-container {
+        height: 484px;
+        margin-top: -78px;
+    }
+
+    .team-img-container div {
+        width: 100%;
+        margin-left: 12px;
+    }
+
+    .team-img-container > div:nth-child(2) {
+        width: 90%;
+    }
+
+    .team-img-container > div:nth-child(2) > img:first-child {
+        width: 92%;
+        margin-bottom: 4px;
+    }
+
+    #form-footer-container {
+        padding-left: 40px;
+    }
+
+    #form-footer-container > form {
+        width: 100%;
+    }
+}
