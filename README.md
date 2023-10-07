@@ -7,3 +7,4 @@
  - **Recipe Blog** [Acessar](https://josimarmg.github.io/devchallenges/recipe-blog/index.html)
  - **My Gallery** [Acessar](https://josimarmg.github.io/devchallenges/my-gallery/index.html)
  - **Checkout Page** [Acessar](https://josimarmg.github.io/devchallenges/checkout-page-master/index.html)
+ - **Edie Homepage** [Acessar] (https://josimarmg.github.io/devchallenges/edie-homepage/index.html)
