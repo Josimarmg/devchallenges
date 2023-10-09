@@ -5,10 +5,10 @@
 :root {
     --Sora: 'Sora', sans-serif;
 
-    --color1: #883AE1;
-    --color2: #20293A;
-    --color3: #6C727F;
-    --color4: #FAFAF9;
+    --c1: #883AE1;
+    --c2: #20293A;
+    --c3: #6C727F;
+    --c4: #FAFAF9;
 }
 
 * {
@@ -19,7 +19,7 @@
 
 body {
     font-family: var(--Sora);
-    background-color: #FAFAF9;
+    background-color: var(--c4);
 }
 
 #card, #designer-container {
@@ -45,7 +45,7 @@ img {
     width: 65px;
     font-size: 0.625rem;
     font-weight: bold;
-    color: var(--color1);
+    color: var(--c1);
     background-color: rgba(136, 58, 225, 0.2);
     border-radius: 50px;
     padding: 4px 16px;
@@ -54,14 +54,14 @@ img {
 
 h1 {
     font-size: 1.125rem;
-    color: var(--color2);
+    color: var(--c2);
     margin-bottom: 6px;
 }
 
 p {
     font-size: 0.875rem;
     font-weight: 300;
-    color: var(--color3);
+    color: var(--c3);
 }
 
 #designer-container {
