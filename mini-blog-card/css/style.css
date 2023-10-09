@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --Sora: 'Sora', sans-serif;
+
+    --color1: #883AE1;
+    --color2: #20293A;
+    --color3: #6C727F;
+    --color4: #FAFAF9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--Sora);
+}
+
+#card, #designer-container {
+    width: 368px;
+    background-color: #FFF;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    border-radius: 12px 12px 0 0;
+    padding: 16px 16px 20px 16px;
+    margin: auto;
+    margin-top: 162px;
+    margin-bottom: 1px;
+}
+
+img {
+    border-radius: 12px;
+}
+
+#details-container {
+    width: 100%;
+}
+
+.tag {
+    width: 65px;
+    font-size: 0.625rem;
+    font-weight: bold;
+    color: var(--color1);
+    background-color: rgba(136, 58, 225, 0.2);
+    border-radius: 50px;
+    padding: 4px 16px;
+    margin: 16px 0;
+}
+
+h1 {
+    font-size: 1.125rem;
+    color: var(--color2);
+    margin-bottom: 6px;
+}
+
+p {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: var(--color3);
+}
+
+#designer-container {
+    border-radius: 0 0 12px 12px;
+    padding: 20px 16px;
+    margin-top: 1px;
+}
+
+p#annie {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
