@@ -13,6 +13,6 @@
 | Edie Homepage | [[ view ]](https://josimarmg.github.io/devchallenges/edie-homepage/index.html)
 | Minimal Blog Card | [[ view ]](https://josimarmg.github.io/devchallenges/mini-blog-card/index.html)
 | Business Blog Card | [[ view ]](https://josimarmg.github.io/devchallenges/business-blog-card/index.html)
-
+| Testimonial Page | [[ view ]](https://josimarmg.github.io/devchallenges/testimonial-page/index.html)
 
 [_Josimarmg_](https://github.com/Josimarmg/devchallenges)
