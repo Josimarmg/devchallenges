@@ -1,0 +1,188 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+/* Variables */
+:root {
+    /* font-family */
+    --default: 'Sora', sans-serif;
+    
+    /* Colors */
+    --color-1: #FFFFFF;
+    --color-2: #FAFAF9;
+    --color-3: #D4D4D8;
+    --color-4: #52525A;
+    --color-5: #18181B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--default);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-2);
+}
+
+main {
+    max-width: 1280px;
+    height: 100vh;
+    margin: auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: var(--color-5);
+    font-size: 2.5rem;
+}
+
+p {
+    color: var(--color-4);
+    font-size: 1.25rem;
+    letter-spacing: .5px;
+}
+
+#text__container {
+    width: 46%;
+}
+
+#text__container img.star_fill {
+    border-radius: 50%;
+    padding: .625rem;
+    background-color: #F5C044;
+    margin-bottom: 10px;
+}
+
+#text__container > p {
+    line-height: 35px;
+    margin: 15px 0 40px 0;
+}
+
+#checklist-container p {
+    font-size: .875rem;
+}
+
+#checklist-container > div {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    margin-bottom: .875rem;
+}
+
+#checklist-container > div > img {
+    filter: invert(51%) sepia(55%) saturate(402%) hue-rotate(75deg) brightness(95%) contrast(95%);
+}
+
+/* CARDS */
+#cards__container {
+    height: 100%;
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+.card {
+    width: 360px;
+    padding: 30px;
+    background-color: var(--color-1);
+    box-shadow: 0 0 5px 2px  rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.card:first-child {
+    align-self: self-end;
+}
+
+.card-img-container {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 30%;
+}
+
+.card > h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.card > p {
+    font-size: 1rem;
+    line-height: 28px;
+}
+
+/* IMG.SVG - STARS */
+.card-star-container {
+    display: flex;
+    gap: 5px;
+}
+
+.card-star-container > img {
+    width: 13%;
+    filter: invert(74%) sepia(90%) saturate(390%) hue-rotate(341deg) brightness(99%) contrast(94%);
+}
+
+.card-star-container > img.filter-none {
+    filter: invert(100%) sepia(3%) saturate(1%) hue-rotate(87deg) brightness(104%) contrast(96%);
+}
+
+/* Media Query Section */
+
+@media screen and (max-width: 830px) {
+
+    #cards__container {
+        width: 48%;
+    }
+
+    .card:first-child {
+        align-self: self-start;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    main {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 45px;
+        padding: 100px 20px 50px 20px;
+    }
+
+    p {
+        letter-spacing: 0px;
+    }
+
+    #text__container {
+        width: 98%;
+        padding-right: 10px;
+    }
+
+    #cards__container {
+        width: 98%;
+        padding: 10px;
+    }
+
+    .card:first-child {
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    #text__container, #cards__container {
+        width: 100%;
+    }
+
+    .card:first-child {
+        align-self: flex-start;
+    }
+}
