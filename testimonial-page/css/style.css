@@ -148,7 +148,7 @@ p {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
 
     main {
         flex-direction: column;
