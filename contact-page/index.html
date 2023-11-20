@@ -8,42 +8,53 @@
 </head>
 <body>
     <header>
-        <img src="img/contact-form-icon.svg" alt="Becv site logo">
-        <h1>Interested in our business pricing?</h1>
-        <p>
-            Fill out the form to view details and we’ll contact you as soon as possible.
-        </p>
+        <div id="logo-container">
+            <img src="img/contact-form-icon.svg" alt="Becv site logo">
+        </div>
+        <div id="header-text-container">
+            <h1>Interested in our business pricing?</h1>
+            <p>
+                Fill out the form to view details and we’ll contact you as soon as possible.
+            </p>
+        </div>
     </header>
     <main>
         <form>
-            <label for="iname">Name</label><br>
-            <input id="iname" type="text" placeholder="Ethan Johnson">
-            <br>
+            <div class="input-container">
+                <div>
+                    <label for="iname">Name</label><br>
+                    <input id="iname" type="text" placeholder="Ethan Johnson">
+                </div>
+                <div>
+                    <label for="icemail">Company Email</label><br>
+                    <input id="icemail" type="email" placeholder="ethan@johnson">
+                </div>
+            </div>
 
-            <label for="icemail">Company Email</label><br>
-            <input id="icemail" type="email" placeholder="ethan@johnson">
-            <br>
-
-            <label>Company Size</label><br>
-            <select>
-                <option>50-100 employees</option>
-                <option>101-500 employees</option>
-                <option>501-1000 employees</option>
-                <option>1001-5000 employees</option>
-            </select>
-            <br>
-
-            <label>Subject</label><br>
-            <select>
-                <option >Building Landing pages</option>
-                <option >Web Designer</option>
-                <option >Front-End Developer</option>
-                <option >Digital Marketing Specialist</option>
-            </select>
-            <br>
+            <div class="input-container">
+                <div>
+                    <label>Company Size</label><br>
+                    <select>
+                        <option>50-100 employees</option>
+                        <option>101-500 employees</option>
+                        <option>501-1000 employees</option>
+                        <option>1001-5000 employees</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Subject</label><br>
+                    <select>
+                        <option >Building Landing pages</option>
+                        <option >Web Designer</option>
+                        <option >Front-End Developer</option>
+                        <option >Digital Marketing Specialist</option>
+                    </select>
+                </div>
+            </div>
 
             <label>Message</label><br>
-            <textarea cols="30" rows="10" placeholder="50-100 employees"></textarea>
+            <textarea cols="30" rows="8" placeholder="50-100 employees"></textarea>
+            <button>Contact Sales</button>
         </form>
     </main>
 </body>

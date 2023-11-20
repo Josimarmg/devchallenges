@@ -1,0 +1,129 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variables */
+:root {
+    /* font-family */
+    --default: 'Be Vietnam Pro', sans-serif;
+
+    /* colors */
+    --color1: #FFFFFF;
+    --color2: #F8FAFC;
+    --color3: #CDD5E0;
+    --color4: #111729;
+    --color5: #4036A9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--default);
+    font-size: 1rem;
+}
+
+body {
+    background: var(--color2) url("../img/bg-image.svg") center center no-repeat;
+    background-size: cover;
+}
+
+header {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+h1, p {
+    font-size: 4rem;
+    color: var(--color2);
+}
+
+p {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+#header-text-container {
+    width: 50%;
+    align-self: center;
+    text-align: center;
+}
+
+main {
+    width: 55vw;
+    background-color: rgba(248, 250, 252, 0.1);
+    border-radius: 25px;
+    padding: 35px;
+    margin: 70px auto;
+}
+
+.input-container {
+    display: flex;
+    gap: 20px;
+}
+
+.input-container > div {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+label {
+    color: var(--color2);
+    font-size: .875rem;
+}
+
+input, select{
+    width: 100%;
+    padding: 25px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 5px;
+
+    background-color: var(--color1);
+}
+
+input::placeholder {
+    opacity: .3;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 15px;
+    padding: 25px;
+    border: none;
+    margin: 5px 0 20px 0;
+
+    font-weight: bold;
+    color: var(--color4);
+    background-color: var(--color1);
+}
+
+textarea::placeholder {
+    color: var(--color4);
+}
+
+button {
+    width: 100%;
+    padding: 25px;
+    border-radius: 15px;
+    border: none;
+
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--color5);
+    background-color: var(--color1);
+}
+
+button:hover {
+    background-color: var(--color5);
+    color: var(--color1);
+}
+
+select, button {
+    cursor: pointer;
+}
