@@ -28,7 +28,7 @@ body {
 }
 
 header {
-    width: 85vw;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     row-gap: 40px;
@@ -48,13 +48,13 @@ p {
 }
 
 #header-text-container {
-    width: 50%;
+    width: 61%;
     align-self: center;
     text-align: center;
 }
 
 main {
-    width: 55vw;
+    width: 80vw;
     background-color: rgba(248, 250, 252, 0.1);
     border-radius: 25px;
     padding: 35px;
@@ -82,8 +82,9 @@ input, select{
     border-radius: 15px;
     border: none;
     margin-top: 5px;
-
     background-color: var(--color1);
+
+    font-weight: bold;
 }
 
 input::placeholder {
@@ -93,14 +94,14 @@ input::placeholder {
 
 textarea {
     width: 100%;
+    border: none;
     border-radius: 15px;
     padding: 25px;
-    border: none;
     margin: 5px 0 20px 0;
+    background-color: var(--color1);
 
     font-weight: bold;
     color: var(--color4);
-    background-color: var(--color1);
 }
 
 textarea::placeholder {
@@ -112,11 +113,11 @@ button {
     padding: 25px;
     border-radius: 15px;
     border: none;
+    background-color: var(--color1);
 
     font-size: 1.25rem;
     font-weight: bold;
     color: var(--color5);
-    background-color: var(--color1);
 }
 
 button:hover {
@@ -124,6 +125,66 @@ button:hover {
     color: var(--color1);
 }
 
-select, button {
+select, button, #logo-container > img {
     cursor: pointer;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+/* Screen 1024px  */
+@media screen and (max-width: 1024px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    #header-text-container {
+        width: 57%;
+    }
+}
+
+/* Screen 768px */
+@media screen and (max-width: 768px) {
+
+    .input-container {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    #header-text-container {
+        width: 76%;
+    }
+}
+
+/* Small Screens*/
+@media screen and (max-width: 426px) {
+
+    header, main {
+        width: 90vw;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+    
+    #header-text-container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
+
+    input, select, textarea, button {
+        padding: 20px;
+    }
 }
